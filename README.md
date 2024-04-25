@@ -1,5 +1,4 @@
-# FT-DM: Feature Translation-Based Diffusion Model for
-Long-Tailed Visual Recognition
+# TDFA: A translation and diffusion-based feature augmentation framework for long-tailed visual recognition
 
 
 
