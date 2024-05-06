@@ -22,7 +22,7 @@ cifar10/100-LT: [CIFAR-10 and CIFAR-100 datasets (toronto.edu)](http://www.cs.to
 
 imagenet-lt：[KITSCH/miniimagenet-LT at main (huggingface.co)](https://huggingface.co/datasets/KITSCH/miniimagenet-LT/tree/main)
 
-inaturalist2018:  [inat_comp/2018 at master · visipedia/inat_comp (github.com)](
+inaturalist2018:  [inat_comp/2018 at master · visipedia/inat_comp (github.com)](https://github.com/visipedia/inat_comp/tree/master/2018)
 
 
 
