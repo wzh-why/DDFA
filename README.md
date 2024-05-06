@@ -52,7 +52,7 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
             --cb --tau 1.0 --augm
     ```
 
-* Class-balancing model finetuning: finetune a DDPM model(ckpt of 200000 steps which the classifier-free guidance (cfg) sampling) based on CBDM approach
+* Class-balancing model finetuning: finetune a DDPM model(ckpt of 200000 steps which the classifier-free guidance (cfg) sampling) based on LTDM approach
     ```
     python main.py --train  \
             --flagfile ./config/cifar100.txt --parallel \
