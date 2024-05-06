@@ -17,7 +17,7 @@ To run the code, please change the argument 'root' to the path where the dataset
 
 Please find the [features for cifar 100 and cifar 10](https://drive.google.com/drive/folders/1Y89vu9DGiQsHl8YvwMrr_7UT4p4Pg_wV?usp=sharing) used in precision/recall/f_beta metrics. Put them in the stats folder and the codes will be ready to run. Note that those two metrics will only be evaluated if the number of samples is 50k otherwise it returns 0.
 
-### DatasetS:
+### Datasets:
 cifar10/100-LT: [CIFAR-10 and CIFAR-100 datasets (toronto.edu)](http://www.cs.toronto.edu/~kriz/cifar.html)
 
 imagenet-lt：[KITSCH/miniimagenet-LT at main (huggingface.co)](https://huggingface.co/datasets/KITSCH/miniimagenet-LT/tree/main)
