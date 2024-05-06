@@ -34,7 +34,7 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
     ```
     python main.py --train  \
             --flagfile ./config/cifar100.txt --parallel \
-            --logdir ./logs/cifar100lt_cbdm --total_steps 300001 \
+            --logdir ./logs/cifar100lt_ltdm --total_steps 300001 \
             --conditional \
             --data_type cifar100lt --imb_factor 0.01 --img_size 32 \
             --batch_size 48 --save_step 100000 --sample_step 50000 \
@@ -45,7 +45,7 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
     ```
     python main.py --train  \
             --flagfile ./config/cifar100.txt --parallel \
-            --logdir ./logs/cifar100lt_cbdm_augm --total_steps 500001 \
+            --logdir ./logs/cifar100lt_ltdm_augm --total_steps 500001 \
             --conditional \
             --data_type cifar100lt --imb_factor 0.01 --img_size 32 \
             --batch_size 48 --save_step 100000 --sample_step 50000 \
@@ -61,7 +61,7 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
             --data_type cifar100lt --imb_factor 0.01 --img_size 32 \
             --batch_size 48 --save_step 50000 --sample_step 50000 \
             --cb --tau 1.0 \
-            --finetune --finetuned_logdir cifar100lt_cbdm_finetune --ckpt_step 200000
+            --finetune --finetuned_logdir cifar100lt_ltdm_finetune --ckpt_step 200000
     ```
 
 ### Evaluate a model
@@ -81,8 +81,8 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
 
     ```
     python main.py \
-        --flagfile ./logs/cifar100lt_cbdm/flagfile.txt \
-        --logdir ./logs/cifar100lt_cbdm \
+        --flagfile ./logs/cifar100lt_ltdm/flagfile.txt \
+        --logdir ./logs/cifar100lt_ltdm \
         --fid_cache ./stats/cifar100.train.npz \
         --ckpt_step 300000 \
         --num_images 50000 --batch_size 64 \
@@ -93,8 +93,8 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
 
     ```
     python main.py \
-        --flagfile ./logs/cifar100lt_cbdm_augm/flagfile.txt \
-        --logdir ./logs/cifar100lt_cbdm_augm \
+        --flagfile ./logs/cifar100lt_ltdm_augm/flagfile.txt \
+        --logdir ./logs/cifar100lt_ltdm_augm \
         --fid_cache ./stats/cifar100.train.npz \
         --ckpt_step 500000 \
         --num_images 50000 --batch_size 192 \
@@ -105,8 +105,8 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
 
     ```
     python main.py \
-        --flagfile ./logs/cifar100lt_cbdm_finetune/flagfile.txt \
-        --logdir ./logs/cifar100lt_cbdm_finetune \
+        --flagfile ./logs/cifar100lt_ltdm_finetune/flagfile.txt \
+        --logdir ./logs/cifar100lt_ltdm_finetune \
         --fid_cache ./stats/cifar100.train.npz \
         --ckpt_step 250000 \
         --num_images 50000 --batch_size 512 \
@@ -115,21 +115,9 @@ Please find the [features for cifar 100 and cifar 10](https://drive.google.com/d
         --sample_method cfg  --omega 2.0
     ```
 
-## References
-
-If you find the code useful for your research, please consider citing
-```bib
-@article{qin2023cbdm,
-  title={Class-Balancing Diffusion Models},
-  author={Yiming Qin, Huangjie Zheng, Jiangchao Yao, Mingyuan Zhou, Ya Zhang},
-  journal={arXiv preprint arXiv:2305.00562},
-  year={2023}
-}
-```
-
 ## Acknowledgements
 
 This implementation is based on / inspired by:
 
 - [https://github.com/w86763777/pytorch-ddpm](https://github.com/w86763777/pytorch-ddpm) 
-- [https://github.com/crowsonkb/k-diffusion/blob/master/train.py](https://github.com/crowsonkb/k-diffusion/blob/master/train.py) (we refer to the implementation of ADA augmentation in K-diffusion model).
+- [https://github.com/crowsonkb/k-diffusion/blob/master/train.py](https://github.com/crowsonkb/k-diffusion/blob/master/train.py).
