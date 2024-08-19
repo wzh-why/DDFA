@@ -1,4 +1,4 @@
-# TDFA: A translation and diffusion-based feature augmentation framework for long-tailed visual recognition
+# DDFA: A displacement and diffusion-based feature augmentation framework for long-tailed visual recognition
 
 
 
